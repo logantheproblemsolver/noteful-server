@@ -25,6 +25,10 @@ app.use( '/api', folderRouter )
 
 app.use( '/api', noteRouter )
 
+app.use('/api', (req, res) => {
+  console.log('you have stumbpled upon the noteful app!')
+})
+
 app.use( errorHandler )
 
 module.exports = app
