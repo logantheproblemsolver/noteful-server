@@ -5,5 +5,4 @@ module.exports = {
     "port": process.env.MIGRATION_DB_PORT || '5432',
     "database": process.env.MIGRATION_DB_NAME || 'noteful',
     "username": process.env.MIGRATION_DB_USER || 'postgres',
-    "password": process.env.MIGRATION_DB_PASS
   }
