@@ -27,7 +27,6 @@ app.use( '/api', noteRouter )
 
 app.use('/api', (req, res) => {
   console.log('you have stumbpled upon the noteful app!')
-  res.json(notes)
 })
 
 app.use( errorHandler )

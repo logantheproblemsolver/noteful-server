@@ -5,7 +5,6 @@ const NoteService = require( './notes-service' )
 const noteRouter = express.Router()
 const jsonParser = express.json()
 
-// pull each piece of logic out of each route, all after .get, and put that all into a route file with a function for each route.
 noteRouter
 
   .route( '/notes' )
