@@ -20,13 +20,16 @@ app.use( helmet() )
 
 app.use( cors() )
 
+app.use('/', (req, res) => {
+  res.json({status: true})
+})
 
 app.use( '/api', folderRouter )
 
 app.use( '/api', noteRouter )
 
 app.use('/api', (req, res) => {
-  console.log('you have stumbpled upon the noteful app!')
+  res.send('you have stumbpled upon the noteful app!')
 })
 
 app.use( errorHandler )
