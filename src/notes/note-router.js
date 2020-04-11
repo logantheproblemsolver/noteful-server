@@ -6,9 +6,7 @@ const noteRouter = express.Router()
 const jsonParser = express.json()
 
 noteRouter
-
   .route( '/notes' )
-
   .get( ( req, res, next ) => {
     const knexInstance = req.app.get( 'db' )
     NoteService.getAllNotes( knexInstance )
@@ -100,11 +98,14 @@ noteRouter
       newNoteFields
     )
       .then( ( updatedNote ) => {
+        console.log(updatedNote)
         res
           .status( 200 )
           .json( updatedNote[0] )
       } )
-      .catch( next )
+      .catch( (error) => {
+        console.log(error)
+      } )
   } )
     
   .delete( ( req, res, next ) => {
