@@ -15,6 +15,7 @@ folderRouter
     const knexInstance = req.app.get( 'db' )
     FolderService.getAllFolders( knexInstance )
       .then( ( folders ) => {
+        console.log(folders)
         res.json( folders )
       } )
       .catch( next )
