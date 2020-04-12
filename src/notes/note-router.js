@@ -98,14 +98,11 @@ noteRouter
       newNoteFields
     )
       .then( ( updatedNote ) => {
-        console.log(updatedNote)
         res
           .status( 200 )
           .json( updatedNote[0] )
       } )
-      .catch( (error) => {
-        console.log(error)
-      } )
+      .catch( next )
   } )
     
   .delete( ( req, res, next ) => {

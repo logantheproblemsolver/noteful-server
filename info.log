@@ -32,3 +32,19 @@
 {"message":{"message":"Unable to acquire a connection","error":{}},"timestamp":"2020-04-11T23:41:14.858Z","level":"error"}
 {"message":{"message":"Unable to acquire a connection","error":{}},"timestamp":"2020-04-11T23:43:32.981Z","level":"error"}
 {"message":{"message":"Unable to acquire a connection","error":{}},"timestamp":"2020-04-11T23:43:33.050Z","level":"error"}
+{"message":{"message":"Unable to acquire a connection","error":{}},"timestamp":"2020-04-12T00:18:47.483Z","level":"error"}
+{"message":{"message":"Unable to acquire a connection","error":{}},"timestamp":"2020-04-12T00:18:47.792Z","level":"error"}
+{"message":{"message":"Unable to acquire a connection","error":{}},"timestamp":"2020-04-12T00:29:05.189Z","level":"error"}
+{"message":{"message":"Unable to acquire a connection","error":{}},"timestamp":"2020-04-12T00:29:05.364Z","level":"error"}
+{"message":{"message":"Unable to acquire a connection","error":{}},"timestamp":"2020-04-12T00:56:04.489Z","level":"error"}
+{"message":{"message":"Unable to acquire a connection","error":{}},"timestamp":"2020-04-12T00:56:04.525Z","level":"error"}
+{"message":{"message":"Unable to acquire a connection","error":{}},"timestamp":"2020-04-12T01:18:30.240Z","level":"error"}
+{"message":{"message":"Unable to acquire a connection","error":{}},"timestamp":"2020-04-12T01:18:30.276Z","level":"error"}
+{"message":{"message":"connect ECONNREFUSED 127.0.0.1:5432","error":{"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":5432}},"timestamp":"2020-04-12T01:34:28.993Z","level":"error"}
+{"message":{"message":"connect ECONNREFUSED 127.0.0.1:5432","error":{"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":5432}},"timestamp":"2020-04-12T01:34:31.205Z","level":"error"}
+{"message":{"message":"select * from \"notes\" - permission denied for table notes","error":{"name":"error","length":157,"severity":"ERROR","code":"42501","file":"d:\\pginstaller_12.auto\\postgres.windows-x64\\src\\backend\\catalog\\aclchk.c","line":"3489","routine":"aclcheck_error"}},"timestamp":"2020-04-12T01:34:52.839Z","level":"error"}
+{"message":{"message":"select * from \"folders\" - permission denied for table folders","error":{"name":"error","length":159,"severity":"ERROR","code":"42501","file":"d:\\pginstaller_12.auto\\postgres.windows-x64\\src\\backend\\catalog\\aclchk.c","line":"3489","routine":"aclcheck_error"}},"timestamp":"2020-04-12T01:34:52.862Z","level":"error"}
+{"message":{"message":"connect ECONNREFUSED 127.0.0.1:5432","error":{"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":5432}},"timestamp":"2020-04-12T01:45:55.515Z","level":"error"}
+{"message":{"message":"connect ECONNREFUSED 127.0.0.1:5432","error":{"errno":"ECONNREFUSED","code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":5432}},"timestamp":"2020-04-12T01:45:55.632Z","level":"error"}
+{"message":{"message":"name is not defined","error":{}},"timestamp":"2020-04-12T01:50:32.555Z","level":"error"}
+{"message":{"message":"insert into \"notes\" (\"content\", \"folderid\", \"name\") values ($1, DEFAULT, $2) returning * - null value in column \"folderid\" violates not-null constraint","error":{"name":"error","length":291,"severity":"ERROR","code":"23502","detail":"Failing row contains (4, null, Note, 2020-04-12 01:50:59.53111, What's up?).","schema":"public","table":"notes","column":"folderid","file":"d:\\pginstaller_12.auto\\postgres.windows-x64\\src\\backend\\executor\\execmain.c","line":"1965","routine":"ExecConstraints"}},"timestamp":"2020-04-12T01:50:59.610Z","level":"error"}
